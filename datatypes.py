@@ -2,6 +2,8 @@
 ## A list in Python is an ordered, mutable collection of elements
 ## they are like arrays in js 
 fruits = ["apple" , "mango" ,"banana" , "cherry" , "pineapple"]
+# print(fruits)
+fruits.sort()
 print(fruits)
 
 ## accesing list 
@@ -11,6 +13,8 @@ print(fruits[1:2])
 ## Modifying Elements:
 fruits[1] = 'blueberry'
 print(fruits)
+
+# sorting list
 
 ## 2 tuples
 ## Tuples are nearly identical to lists, with two key differences:

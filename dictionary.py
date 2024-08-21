@@ -19,7 +19,7 @@ person = {'name': 'John', 'age': 30, 'city': 'New York'}
 # print(person.keys())
 
 '''Get all values of the dictionary'''
-# print(person.values())
+print(person.values())
 
 '''Create a copy of the dictionary'''
 person_copy = person.copy()

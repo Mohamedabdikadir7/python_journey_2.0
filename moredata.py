@@ -1,51 +1,48 @@
-# Creating a list
-fruits = ["apple", "banana", "cherry"]
-print("Original list:", fruits)
+# Python List Methods Examples
 
 # 1. append() - Adds an element to the end of the list
-fruits.append("date")
-print("After append():", fruits)
+my_list = [1, 2, 3]
+my_list.append(0)
+print(my_list)  # Output: [1, 2, 3, 4]
 
-# 2. extend() - Adds all elements of a list to another list
-more_fruits = ["elderberry", "fig"]
-fruits.extend(more_fruits)
-print("After extend():", fruits)
+# # 2. extend() - Adds multiple elements to the end of the list
+# my_list.extend([5, 6])
+# print("extend():", my_list)  # Output: [1, 2, 3, 4, 5, 6]
 
-# 3. insert() - Inserts an element at a specified position
-fruits.insert(1, "blueberry")
-print("After insert():", fruits)
+# # 3. insert() - Inserts an element at a specified position
+# my_list.insert(2, 'a')
+# print("insert():", my_list)  # Output: [1, 2, 'a', 3, 4, 5, 6]
 
-# 4. remove() - Removes the first item with the specified value
-fruits.remove("banana")
-print("After remove():", fruits)
+# # 4. remove() - Removes the first occurrence of an element
+# my_list.remove('a')
+# print("remove():", my_list)  # Output: [1, 2, 3, 4, 5, 6]
 
-# 5. pop() - Removes the element at the specified position
-popped_fruit = fruits.pop(2)
-print(f"Popped {popped_fruit}. After pop():", fruits)
+# # 5. pop() - Removes and returns the element at the given position
+# last_item = my_list.pop()
+# print("pop():", my_list)  # Output: [1, 2, 3, 4, 5]
+# print("popped item:", last_item)  # Output: 6
 
-# 6. clear() - Removes all elements from the list
-fruits.clear()
-print("After clear():", fruits)
+# # 6. clear() - Removes all elements from the list
+# my_list.clear()
+# print("clear():", my_list)  # Output: []
 
-# Recreating the list for more examples
-fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+# # 7. index() - Returns the index of the first occurrence of an element
+# my_list = [1, 2, 3, 4, 5]
+# index = my_list.index(3)
+# print("index():", index)  # Output: 2
 
-# 7. index() - Returns the index of the first element with the specified value
-banana_index = fruits.index("banana")
-print("Index of 'banana':", banana_index)
+# # 8. count() - Returns the number of occurrences of an element
+# count = my_list.count(2)
+# print("count():", count)  # Output: 1
 
-# 8. count() - Returns the number of elements with the specified value
-cherry_count = fruits.count("cherry")
-print("Count of 'cherry':", cherry_count)
+# # 9. sort() - Sorts the list in ascending order
+# my_list.sort()
+# print("sort():", my_list)  # Output: [1, 2, 3, 4, 5]
 
-# 9. sort() - Sorts the list
-fruits.sort()
-print("After sort():", fruits)
+# # 10. reverse() - Reverses the order of elements in the list
+# my_list.reverse()
+# print("reverse():", my_list)  # Output: [5, 4, 3, 2, 1]
 
-# 10. reverse() - Reverses the order of the list
-fruits.reverse()
-print("After reverse():", fruits)
-
-# 11. copy() - Returns a copy of the list
-fruits_copy = fruits.copy()
-print("Copy of fruits:", fruits_copy)
+# # 11. copy() - Returns a shallow copy of the list
+# new_list = my_list.copy()
+# print("copy():", new_list)  # Output: [5, 4, 3, 2, 1]
